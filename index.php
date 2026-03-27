@@ -1,12 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset= "UTF-8">
+        <title>Comentarios</title>
 
-<head>
-    <title>PHP Starter</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="estilos.css">
+
 </head>
+<body class="bg-light">
 
-<body>
-    <h1>PHP Starter in CodeSandbox</h1>
-    <?php phpinfo(); ?>
-</body>
-
-</html>
+<nav clas
