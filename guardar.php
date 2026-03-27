@@ -35,5 +35,3 @@ header('Location: index.php');
 exit;
 ?>
 
-
----GUILLERMO---
