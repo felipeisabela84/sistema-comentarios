@@ -42,10 +42,13 @@
 <h5 class="mt-3 fw-bold">Comentarios recibidos</h5>
 
 <?php
-if(file_exists("comentarios.txt")){
-    $lineas = file("comentarios.txt");
-    foreach($lineas as $linea){
-        echo "<div class='comentario-box'>$linea</div>";
+if(file_exists("comentarios.json")){
+    $datos = json_decode(file_get_contents("comentarios.json"), true);
+
+    foreach($datos as $c){
+        echo "<div class='comentario-box'>";
+        echo "<strong>{$c['nombre']}:</strong> {$c['comentario']}";
+        echo "</div>";
     }
 }
 ?>
