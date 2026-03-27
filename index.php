@@ -38,8 +38,22 @@
 </form>
 
 <span class="badge bg-secondary mt-3">Comentarios</span>
+<?php
+$total = 0;
+
+if(file_exists("comentarios.json")){
+    $datos = json_decode(file_get_contents("comentarios.json"), true);
+    $total = count($datos);
+}
+?>
+
+<span class="badge bg-secondary mt-3">
+<?php echo $total; ?> comentarios
+</span>
 
 <h5 class="mt-3 fw-bold">Comentarios recibidos</h5>
+
+
 
 <?php
 if(file_exists("comentarios.json")){
